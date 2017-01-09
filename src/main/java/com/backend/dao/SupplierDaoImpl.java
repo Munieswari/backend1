@@ -7,18 +7,15 @@ import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.backend.model.Users;
+import com.backend.model.Supplier;
 
-@Repository("UserDaoImpl")
+@Repository("SupplierDaoImpl")
 @Transactional
-public class UserDaoImpl  implements UsersDao {
- 
+public class SupplierDaoImpl implements SupplierDao{
 @Autowired
 private SessionFactory sessionFactory;
-public void registerUser(Users user){
+public void addSupplier(Supplier supplier){
 	Session session=sessionFactory.getCurrentSession();
-	session.save(user);
-	System.out.println("user saved");
-}
-	
+	session.save(supplier);
+	System.out.println("supplier saved");}
 }

@@ -27,50 +27,32 @@
     <artifactId>spring-core</artifactId>
     <version>4.3.2.RELEASE</version>
     </dependency>
-<<<<<<< HEAD
-        
     <dependency>
-=======
-     <dependency>
->>>>>>> backend project
+     
+
     <groupId>org.springframework</groupId>
     <artifactId>spring-context</artifactId>
     <version>4.3.2.RELEASE</version>
     </dependency>
-<<<<<<< HEAD
+
         
     <dependency>
-=======
-     <dependency>
->>>>>>> backend project
+
     <groupId>org.springframework</groupId>
     <artifactId>spring-orm</artifactId>
     <version>4.3.2.RELEASE</version>
     </dependency>
-<<<<<<< HEAD
-        
-    <dependency>
-=======
-     <dependency>
->>>>>>> backend project
+         <dependency>
+
     <groupId>org.hibernate</groupId>
     <artifactId>hibernate-core</artifactId>
     <version>4.3.5.Final</version>
-    </dependency>
-<<<<<<< HEAD
-        
+    </dependency>        
     <dependency>
-=======
-     <dependency>
->>>>>>> backend project
     <groupId>com.h2database</groupId>
     <artifactId>h2</artifactId>
     <version>1.4.192</version>
     </dependency>
-<<<<<<< HEAD
-    
-  </dependencies>
-=======
+ 
     </dependencies>
->>>>>>> backend project
 </project>

@@ -8,11 +8,8 @@ import javax.persistence.Id;
 public class Users {
 	@Id@GeneratedValue
 	private int userId;
-<<<<<<< HEAD
 	private String username;
 	private String password;
-=======
->>>>>>> backend project
 	public int getUserId() {
 		return userId;
 	}
@@ -31,11 +28,6 @@ public class Users {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-<<<<<<< HEAD
-=======
-	private String username;
-	private String password;
->>>>>>> backend project
 	
 
 }

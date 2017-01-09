@@ -15,10 +15,9 @@ import org.springframework.orm.hibernate4.HibernateTransactionManager;
 import org.springframework.orm.hibernate4.LocalSessionFactoryBuilder;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
-<<<<<<< HEAD
-=======
+import com.backend.model.Category;
 import com.backend.model.Product;
->>>>>>> backend project
+import com.backend.model.Supplier;
 import com.backend.model.Users;
 
 
@@ -53,11 +52,11 @@ public class ApplicationConfiguration {
 	{
 		 LocalSessionFactoryBuilder localSessionFactoryBuilder=new LocalSessionFactoryBuilder(dataSource);
 		 localSessionFactoryBuilder.addProperties(getProperties());
-		localSessionFactoryBuilder.addAnnotatedClasses(Users.class);
-<<<<<<< HEAD
-=======
-	   localSessionFactoryBuilder.addAnnotatedClasses(Product.class);
->>>>>>> backend project
+		 localSessionFactoryBuilder.addAnnotatedClasses(Users.class);
+		   localSessionFactoryBuilder.addAnnotatedClasses(Product.class);
+		localSessionFactoryBuilder.addAnnotatedClasses(Category.class);
+	   localSessionFactoryBuilder.addAnnotatedClasses(Supplier.class);
+
 		 return localSessionFactoryBuilder.buildSessionFactory();
 	}
 	@Autowired
