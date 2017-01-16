@@ -21,8 +21,8 @@ public class App
         //annotationConfigApplicationContext.refresh();
         UsersDao userDao=(UsersDao)annotationConfigApplicationContext.getBean("UserDaoImpl");
         Users user=new Users();
-        user.setUsername("test");
-        user.setPassword("test");
+        user.setUsername("eshu");
+        user.setPassword("eshu");
         userDao.registerUser(user);
                   
         ProductDao p=(ProductDao)annotationConfigApplicationContext.getBean("ProductDaoImpl");
